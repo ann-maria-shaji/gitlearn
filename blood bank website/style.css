@@ -1,0 +1,43 @@
+body{
+    background-image:url("backgnd-img.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    
+    
+}
+h1{
+    color:white;
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 130px;
+}
+p{
+    font-family: cursive;
+    font-style: italic;
+    color:wheat;
+    
+}
+.navbar{
+    position: relative;
+    top:0px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 50px;
+    
+    
+
+}
+
+.nav{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin-left: 1100px;
+    
+
+}

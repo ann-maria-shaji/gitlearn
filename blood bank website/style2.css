@@ -1,0 +1,11 @@
+body{
+    
+    font-family: monospace;
+    font-size: 20px;
+}
+p{
+    font-family: cursive;
+    font-style: italic;
+    text-decoration: white;
+    background-color: dimgray;
+}

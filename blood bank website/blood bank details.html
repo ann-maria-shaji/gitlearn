@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>register</title>
+<link rel="stylesheet" href="style1.css">
+</head><body>
+    <h3>A big salute for your valuable decision. <br>Please enter the details</h3>
+    <p>
+        This is a data collection of people who are willing to donate blood. We will contact you for needy.<br>
+        
+    </p>
+    <form action="index.html">
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="age">Age: </label>
+        <input type="number" id="age" name="age" required><br><br>
+        <label for="num">Phn no. </label>
+        <input type="number" id="num" name="num" required><br><br>
+        <label for="height">Height: </label>
+        <input type="number" id="height" name="height" required><br><br>
+        <label for="weight">Weight: </label>
+        <input type="number" id="weight" name="weight" required><br><br>
+        <label for="gender">Gender</label><br>
+        <input type="radio" id="male" name="gender" value="" required>
+        <label for ="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="">
+        <label for ="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="">
+        <label for ="other">Other</label><br><br>
+
+        <label for="group">Blood Group</label>
+        <select name="stars">
+            <option value="">A+</option>
+            <option value="">B+</option>
+            <option value="">O+</option>
+            <option value="">AB+</option>
+            <option value="">A-</option>
+            <option value="">B-</option>
+            <option value="">O-</option>
+            <option value="">AB-</option><br><br>
+        </select><br><br>
+
+        <label for="place">Location details</label><br>
+        <label for="district">District</label>
+        <input type="text" id="district" name="place" required> &nbsp;&nbsp;
+        <label for="area">Place</label>
+        <input type="text" id="area" name="place" required><br><br>
+
+        <label for="health">Do you have any health issues?</label><br>
+        <input type="radio" id="yes" name="health" value="">
+        <label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="health" value=""> 
+        <label for="no">No</label><br>
+        <label for="if yes">If yes mention:</label>
+        <input type="text" id="if yes" name="health" ><br><br>
+
+        <input type="submit" name="home" value="Home">
+
+        </form>
+</body>
+</html>
