@@ -1,0 +1,211 @@
+body{
+    background: fixed;
+    background-color: antiquewhite;
+}
+
+h1{
+    color: chocolate;
+    font-family: cursive;
+    font-size: 300%;
+    text-align: center;
+    
+}
+
+.intro{
+    border: grey;
+    
+    margin: 20px 20px 20px 20px;
+    color: darkred;
+    font-size: 150%;
+    font-family: ;
+}
+
+p{
+    color:maroon;
+    font-family: cursive;
+    font-size:250% ;
+    font-weight: bold;
+
+}
+
+.box{
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: maroon;
+    padding: 20px ;
+    border-radius: 5px;
+    margin-top: 100px;
+    font-size: 150%;
+    font-family: monospace;
+    color: white;
+    font-weight: bolder;
+    
+}
+
+.startbut{
+   width: 100%;
+   font-size: 20px;
+   padding: 8px 10px;
+   border: none;
+   outline: none;
+   background: antiquewhite;
+   border-radius: 5px;
+   cursor: pointer;
+   font-family: monospace;
+   transition: all 0.3s ;
+   
+}
+
+.startbut:hover{
+    transform:scale(0.9) ;
+    color: maroon;
+    
+}
+
+.startbut:focus{
+    color: orangered;
+    background-color: white;
+}
+
+
+ *,*::after, *::before{
+    box-sizing: border-box;
+}
+
+:root{
+    --boxx-size: 100px;
+    --mark-size: calc(var(--boxx-size)*.9);
+}
+
+.main {
+    
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3,auto)
+}
+
+.boxx {
+    width: var(--boxx-size);
+    height: var(--boxx-size);
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    background-color:sandybrown;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;    
+}
+
+.boxx.x,
+.boxx.circle {
+    cursor: not-allowed;
+}
+
+.boxx.x::before,
+.boxx.x::after,
+.boxx.circle::before {
+    background-color: white;
+}
+
+.main.x .boxx:not(.x):not(.circle):hover::before,
+.main.x .boxx:not(.x):not(.circle):hover::after,
+.main.circle .boxx:not(.x):not(.circle):hover::before {
+    background-color: gray;
+
+}
+
+.boxx.x::before,
+.boxx.x::after,
+.main.x .boxx:not(.x):not(.circle):hover::before,
+.main.x .boxx:not(.x):not(.circle):hover::after {
+    content: '';
+    position: absolute;
+    width: calc(var(--mark-size)* .10);
+    height: calc(var(--mark-size)* .8);
+    
+}
+
+
+
+.boxx.x::before,
+.main.x .boxx:not(.x):not(.circle):hover::before {
+    transform: rotate(45deg);
+}
+
+.boxx.x::after,
+.main.x .boxx:not(.x):not(.circle):hover::after {
+    transform: rotate(-45deg);
+}
+
+
+.boxx.circle::before,
+.boxx.circle::after,
+.main.circle .boxx:not(.x):not(.circle):hover::before,
+.main.circle .boxx:not(.x):not(.circle):hover::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+    
+
+
+.boxx.circle::before,
+.main.circle .boxx:not(.x):not(.circle):hover::before {
+    width: calc(var(--mark-size)* .8);
+    height: calc(var(--mark-size)* .8);
+}
+
+
+.boxx.circle::after,
+.main.circle .boxx:not(.x):not(.circle):hover::after {
+    width: calc(var(--mark-size)* .6);
+    height: calc(var(--mark-size)* .6);
+    background-color : sandybrown;
+}
+
+
+.msg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .9);
+    justify-content: center;
+    align-items: center;
+    color: sandybrown;
+    font-size: 5rem;
+    flex-direction: column;
+}
+
+.msg button {
+    font-size: 3rem;
+    background-color: sandybrown;
+    border: 1px solid wheat;
+    padding: .25em .5em;
+    cursor: pointer;
+}
+
+
+.msg button:hover {
+    background-color: wheat;
+    color: orangered;
+    border-color: white;
+}
+  
+  .msg.show {
+    display: flex;
+}
+  
+ 
+
+ 
